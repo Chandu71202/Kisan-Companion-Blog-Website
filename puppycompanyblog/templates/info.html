@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<br><br>
+
+<div class="jumbotron">
+  <h1>Kisan-Companion</h1><br>
+  <h5>
+    Kisan-Companion lets you know the recommendation's of Crop, Fertilizer and Disease-Detection.<br>
+    This a website in which farmers can post their progress about the crops or the status about the fertilizers they are using.<br>
+    This even helps other farmers to communicate among themselves and articulate each other
+  <h5>
+</div>
+<div class="jumbotron">
+  <h2>CROP</h2>
+  <p>
+    To get the recommendation of <strong><em>crop</em></strong> you need to provide some of the soil details like
+    <ul>
+      <li>Nitrogen  - N</li>
+      <li>Phosphorous - P</li>
+      <li>Potassium - K</li>
+      <li>ph level of soil - ph</li>
+      <li>Rainfall in mm</li>
+      <li>State</li>
+      <li>City</li>
+    </ul>
+    And that's it you will get the crop to be grown based on our Machine Learning Model
+  </p>
+</div>
+
+<div class="jumbotron">
+  <h2>FERTILIZER</h2>
+  <p>
+    To get the recommendation of <strong><em>fertilizer</em></strong> you need to provide some of the soil details like
+    <ul>
+      <li>Nitrogen  - N</li>
+      <li>Phosphorous - P</li>
+      <li>Potassium - K</li>
+      <li>Recommened Crop from the previous section</li>
+    </ul>
+    And that's it you will get the fertilizer to be used based on our Machine Learning Model
+  </p>
+</div>
+
+<div class="jumbotron">
+  <h2>DISEASE - DETECTION</h2>
+  <p>
+    To get the cure and precaution about the <strong><em>disease</em></strong> of the plant. You need to just upload the <strong>leaf photo</strong>.
+    And that's it you will get the complete details about the disease based on our Machine Learning Model. <br><br>
+    It even suggests the precautions of the to be followed in the further process.
+  </p>
+</div>
+
+{% endblock %}
